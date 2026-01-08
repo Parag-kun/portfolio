@@ -1,11 +1,10 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
+import { useEffect, useState } from "react";
 
 import TypingText from "@/components/animations/typing";
 import { Button } from "@/components/ui/button";
-import BlurredBallsBackground from "@/components/animations/balls-bg";
-import { useEffect, useState } from "react";
 
 const container: Variants = {
   initial: {},
@@ -38,7 +37,6 @@ export default function Hero() {
 
   return (
     <div className="h-screen flex flex-col text-center lg:text-start items-center justify-center py-10 px-4 md:px-8 lg:px-20">
-      <BlurredBallsBackground />
       {show && (
         <motion.div
           initial={{ opacity: 0, height: 0 }}

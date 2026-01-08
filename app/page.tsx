@@ -4,18 +4,22 @@ import Projects from "./sections/projects";
 import WorkExperience from "./sections/work-experience";
 import Skillset from "./sections/skillset";
 import Trailer from "./sections/trailer";
+import BlurredBallsBackground from "@/components/animations/balls-bg";
+import Footer from "./sections/footer";
 
 export default function Home() {
   return (
     <main className="relative">
-      <section className="sticky top-0">
+      <BlurredBallsBackground />
+      <section>
         <Trailer />
         <Hero />
       </section>
-      <Projects />
+      {/* <Projects />
       <WorkExperience />
       <Skillset />
-      <Contact />
+      <Contact /> */}
+      <Footer />
     </main>
   );
 }
