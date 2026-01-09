@@ -11,7 +11,10 @@ export default function Footer() {
           className="hover:text-white transition-colors"
           aria-label="GitHub"
         >
-          <FaGithub size={20} />
+          <FaGithub
+            size={20}
+            className="hover:text-black transition-colors duration-200"
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/parag-bokde-30b9241b1/"
@@ -20,7 +23,10 @@ export default function Footer() {
           className="hover:text-white transition-colors"
           aria-label="LinkedIn"
         >
-          <FaLinkedin size={20} />
+          <FaLinkedin
+            size={20}
+            className="hover:text-black transition-colors duration-200"
+          />
         </a>
         <a
           href="https://x.com/ParagBokde"
@@ -29,7 +35,10 @@ export default function Footer() {
           className="hover:text-white transition-colors"
           aria-label="Twitter"
         >
-          <FaTwitter size={20} />
+          <FaTwitter
+            size={20}
+            className="hover:text-black transition-colors duration-200"
+          />
         </a>
         <a
           href="https://www.instagram.com/paragbokde/"
@@ -38,7 +47,10 @@ export default function Footer() {
           className="hover:text-white transition-colors"
           aria-label="Instagram"
         >
-          <FaInstagram size={20} />
+          <FaInstagram
+            size={20}
+            className="hover:text-black transition-colors duration-200"
+          />
         </a>
       </div>
       <p>&copy; {new Date().getFullYear()} Parag Bokde. All rights reserved.</p>

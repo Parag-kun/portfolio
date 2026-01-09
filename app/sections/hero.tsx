@@ -56,7 +56,7 @@ export default function Hero() {
         animate="animate"
         className="mb-4 text-xl font-bold leading-tight tracking-tighter md:text-3xl lg:text-5xl text-center text-shadow-black"
       >
-        A Full Stack Developer that loves to build scalable and performant web
+        A Full Stack Developer that builds and scales performant web
         applications.
       </motion.h1>
       {show && (
@@ -66,9 +66,11 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-12 text-zinc-800 md:text-lg lg:text-xl leading-relaxed text-center"
         >
-          I am an experienced software engineer who has worked with both
-          startups and established companies. I am passionate about
-          problem-solving, software development, and machine learning.
+          I am an experienced software engineer with a background spanning both
+          startups and established organizations. I bring a strong passion for
+          problem-solving, software development, and machine learning, and I
+          enjoy building scalable, impactful solutions that bridge innovation
+          with real-world applications.
         </motion.p>
       )}
       {show && (
@@ -79,7 +81,7 @@ export default function Hero() {
           className="flex gap-4 items-center justify-center lg:justify-start"
         >
           <a href="mailto:paragbokde51@gmail.com">
-            <Button variant="outline" size="lg">
+            <Button variant="secondary" size="lg">
               Contact Me
             </Button>
           </a>

@@ -23,7 +23,7 @@ export default function Trailer() {
           You need
         </motion.div>
         <motion.h1 className="mb-4 text-xl font-bold leading-tight tracking-tighter md:text-3xl lg:text-5xl text-center">
-          A Full Stack Developer that loves to build scalable and performant web
+          A Full Stack Developer that builds and scales performant web
           applications?
         </motion.h1>
 
