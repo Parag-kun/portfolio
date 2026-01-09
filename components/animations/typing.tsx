@@ -29,7 +29,7 @@ export default function TypingText({
       clearTimeout(timeoutRef);
       intervalRef && clearInterval(intervalRef);
     };
-  }, [speed]);
+  }, [speed, delay]);
 
   return (
     <div {...props}>

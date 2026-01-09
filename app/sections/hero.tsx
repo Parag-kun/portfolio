@@ -1,11 +1,16 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { motion, type Variants } from "framer-motion";
 import { useEffect, useState } from "react";
 
 import TypingText from "@/components/animations/typing";
 import { Button } from "@/components/ui/button";
-import BlurredBallsBackground from "@/components/animations/balls-bg";
+
+const BlurredBallsBackground = dynamic(
+  () => import("@/components/animations/balls-bg"),
+  { ssr: false }
+);
 
 const container: Variants = {
   initial: {},

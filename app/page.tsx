@@ -1,13 +1,14 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 import Hero from "./sections/hero";
-import Contact from "./sections/contact";
-import Projects from "./sections/projects";
+import Trailer from "./sections/trailer";
 import WorkExperience from "./sections/work-experience";
 import Skillset from "./sections/skillset";
-import Trailer from "./sections/trailer";
+import Projects from "./sections/projects";
+import Contact from "./sections/contact";
 import Footer from "./sections/footer";
-import { useEffect, useState } from "react";
 
 export default function Home() {
   const [show, setShow] = useState(false);

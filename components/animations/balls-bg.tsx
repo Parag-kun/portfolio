@@ -3,6 +3,8 @@
 import { clamp, motion } from "framer-motion";
 import { memo } from "react";
 
+import { useScreenSize } from "@/hooks/window";
+
 // Utility helpers
 const random = (min: number, max: number) => Math.random() * (max - min) + min;
 
@@ -51,15 +53,16 @@ function Ball({
 }
 
 function BlurredBallsBackground() {
+  const screenSize = useScreenSize();
+
   const balls = Array.from({ length: random(8, 12) });
-  const screenSize = window.screen.width;
 
   return (
     <div className="absolute h-full w-full overflow-hidden bg-white -z-10">
       {balls.map((_, i) => (
         <Ball
           key={i}
-          size={clamp(100, 500, random(200, 500) * (screenSize / 1920))}
+          size={clamp(100, 500, random(200, 500) * (screenSize?.width / 1920))}
           color={COLORS[Math.floor(Math.random() * COLORS.length)]}
           x={`${random(0, 100)}%`}
           y={`${random(0, 100)}%`}

@@ -1,4 +1,7 @@
+"use client";
+
 import TypingText from "@/components/animations/typing";
+import { useScreenSize } from "@/hooks/window";
 import { luckiestGuy } from "@/utils/fonts";
 import { cn } from "@/utils/tailwind";
 import { motion } from "framer-motion";
@@ -39,6 +42,8 @@ const timeline = [
 ];
 
 export default function WorkExperience() {
+  const screenSize = useScreenSize();
+
   return (
     <div className="relative py-12 px-4 bg-white z-30 rounded-2xl overflow-hidden">
       <div className="absolute inset-4 bg-[url('/journey.jpg')] bg-cover bg-center bg-no-repeat blur-md opacity-80 scale-105" />
@@ -56,7 +61,7 @@ export default function WorkExperience() {
 
         <div className="space-y-16">
           {timeline.map((item, index) => {
-            const isLeft = index % 2 === 0 && window.screen.width > 768;
+            const isLeft = index % 2 === 0 && screenSize?.width > 768;
 
             return (
               <div key={index} className="relative flex">
