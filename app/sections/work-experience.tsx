@@ -57,7 +57,7 @@ export default function WorkExperience() {
       />
 
       <div className="mt-16 relative max-w-6xl mx-auto">
-        <div className="absolute left-2 md:left-1/2 top-0 h-full w-px bg-gray-300 md:-translate-x-1/2" />
+        <div className="absolute left-2 md:left-1/2 top-0 h-full w-px bg-white md:-translate-x-1/2" />
 
         <div className="space-y-16">
           {timeline.map((item, index) => {
@@ -79,7 +79,7 @@ export default function WorkExperience() {
 
                 {/* Center dot */}
                 <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2">
-                  <div className="w-4 h-4 rounded-full bg-black" />
+                  <div className="w-4 h-4 rounded-full bg-black border-3 border-white" />
                 </div>
 
                 {/* Right side */}
