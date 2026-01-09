@@ -6,7 +6,6 @@ import Projects from "./sections/projects";
 import WorkExperience from "./sections/work-experience";
 import Skillset from "./sections/skillset";
 import Trailer from "./sections/trailer";
-import BlurredBallsBackground from "@/components/animations/balls-bg";
 import Footer from "./sections/footer";
 import { useEffect, useState } from "react";
 
@@ -21,17 +20,16 @@ export default function Home() {
 
   return (
     <main className="relative">
-      <BlurredBallsBackground />
-      <section>
+      <section className="sticky top-0">
         <Trailer />
         <Hero />
       </section>
       {show && (
         <>
-          {/* <Projects />
+          {/* <Projects /> */}
           <WorkExperience />
-          <Skillset />
-          <Contact /> */}
+          {/* <Skillset /> */}
+          {/* <Contact /> */}
           <Footer />
         </>
       )}

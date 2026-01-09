@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="py-8 text-center text-zinc-500 text-sm">
+    <footer className="py-8 text-center text-zinc-500 text-sm relative z-50">
       <div className="flex justify-center gap-6 mb-4">
         <a
           href="https://github.com/Parag-kun"
