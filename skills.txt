@@ -1,0 +1,15 @@
+Reactjs
+NextJs
+Remix
+TailwindCSS
+NodeJs
+ExpressJs
+NestJS
+MongoDB
+MySQL
+PostgreSQL
+Redis
+Websockets
+BullMQ
+Docker
+Typescript

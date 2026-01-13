@@ -127,7 +127,11 @@ function TimelineCard({
           "flex-row-reverse": !isLeft,
         })}
       >
-        <img className="h-8 md:h-12" src={organizationLogo} alt="" />
+        <img
+          className="h-8 md:h-12"
+          src={organizationLogo}
+          alt={`${organization} logo`}
+        />
         <div
           className={cn("flex items-center flex-wrap", {
             "justify-end": isLeft,

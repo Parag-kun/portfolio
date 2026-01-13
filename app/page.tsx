@@ -27,7 +27,7 @@ export default function Home() {
       </section>
       {show && (
         <>
-          {/* <Projects /> */}
+          <Projects />
           <WorkExperience />
           {/* <Skillset /> */}
           {/* <Contact /> */}
