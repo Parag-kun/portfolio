@@ -8,9 +8,6 @@ import {
   FaRegFilePdf,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import Link from "next/link";
-import { luckiestGuy } from "@/utils/fonts";
-import { cn } from "@/utils/tailwind";
 
 export default function Header() {
   const links = [
@@ -57,17 +54,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 w-full z-50 py-4 px-6 md:px-12 backdrop-blur-md bg-white/50 border-b border-black/10 flex flex-col md:flex-row items-center justify-between gap-4">
-      <Link href="/">
-        <h1
-          className={cn(
-            "text-2xl md:text-3xl tracking-wider text-black",
-            luckiestGuy.className,
-          )}
-        >
-          Parag Bokde
-        </h1>
-      </Link>
+    <header className="fixed top-0 w-full z-50 py-4 px-6 md:px-12 flex flex-col md:flex-row items-center justify-end gap-4">
       <nav className="flex items-center gap-4 md:gap-6 bg-white/80 px-6 py-3 rounded-full border border-black/10 shadow-sm backdrop-blur-xl">
         {links.map((link) => (
           <a

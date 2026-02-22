@@ -15,16 +15,16 @@ export default function Tabs() {
   const pathname = usePathname();
 
   return (
-    <div className="fixed bottom-6 md:bottom-12 left-1/2 -translate-x-1/2 z-50 w-[90%] md:w-auto max-w-2xl">
+    <div className="fixed bottom-3 md:bottom-6 left-1/2 -translate-x-1/2 z-50 w-[95%] sm:w-[90%] md:w-auto max-w-2xl">
       <UiTabs value={pathname}>
-        <TabsList className="bg-white/80 backdrop-blur-xl p-2 rounded-2xl border border-black/10 shadow-lg relative overflow-x-auto overflow-y-hidden hide-scrollbar justify-between">
+        <TabsList className="bg-white/80 backdrop-blur-xl p-1.5 sm:p-2 rounded-2xl border border-black/10 shadow-lg relative overflow-x-auto overflow-y-hidden hide-scrollbar flex-nowrap md:justify-between w-full">
           {tabs.map((tab) => (
             <TabsTrigger
               key={tab.path}
               value={tab.path}
               href={tab.path}
               layoutId="global-tabs-indicator"
-              className="px-4 md:px-6 py-2.5 text-sm md:text-base text-white whitespace-nowrap"
+              className="px-2 sm:px-4 md:px-6 py-1.5 sm:py-2 text-[10px] sm:text-xs md:text-sm text-white whitespace-nowrap flex-1 md:flex-none text-center"
               indicatorClassName="bg-black"
               inactiveClassName="text-black/60 hover:text-black"
               activeClassName="font-semibold"
