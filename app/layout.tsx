@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import Header from "@/components/layout/header";
+import Tabs from "@/components/layout/tabs";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import BackgroundWrapper from "@/components/layout/background-wrapper";
 
 export const metadata: Metadata = {
   title: "Parag Bokde | Full Stack Developer | Next.js, MERN Stack",
@@ -77,14 +70,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
-      >
+      <body className="antialiased bg-white text-black relative">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {children}
+        <BackgroundWrapper />
+        <Header />
+        <main className="relative min-h-screen pt-24 pb-32">{children}</main>
+        <Tabs />
       </body>
     </html>
   );
