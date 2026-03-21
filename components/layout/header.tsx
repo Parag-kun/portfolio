@@ -47,7 +47,7 @@ export default function Header() {
       label: "Instagram",
     },
     {
-      href: "#",
+      href: "/ParagResume.pdf",
       icon: <FaRegFilePdf size={18} />,
       label: "Resume",
     },
@@ -60,9 +60,15 @@ export default function Header() {
           <a
             key={link.label}
             href={link.href}
-            target={link.href.startsWith("http") ? "_blank" : undefined}
+            target={
+              link.href.startsWith("http") || link.href.endsWith(".pdf")
+                ? "_blank"
+                : undefined
+            }
             rel={
-              link.href.startsWith("http") ? "noopener noreferrer" : undefined
+              link.href.startsWith("http") || link.href.endsWith(".pdf")
+                ? "noopener noreferrer"
+                : undefined
             }
             aria-label={link.label}
             className="text-zinc-600 hover:text-black transition-all hover:scale-110 active:scale-95"
