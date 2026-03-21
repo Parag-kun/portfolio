@@ -8,7 +8,7 @@ export const projectsData: Project[] = [
     description:
       "A premium, motion-driven experience featuring an immersive hero section with scroll-synced, interactive vintage artifacts like coins and stamps, and a sophisticated adaptive overlay system that transitions from a desktop sidebar to a mobile slider. Polished with refined micro-animations and custom mobile swipe galleries, the entire layout is powered by Framer Motion for a buttery-smooth user journey across all devices.",
     icon: FaGlassMartiniAlt,
-    link: "#",
+    link: "https://thebombaebar.vercel.app/",
     tags: ["Next.js", "Framer Motion", "TypeScript", "Tailwind CSS"],
   },
   {
